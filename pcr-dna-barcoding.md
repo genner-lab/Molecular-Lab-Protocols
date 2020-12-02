@@ -1,16 +1,21 @@
 # Protocol for PCR amplifying COI and 12S DNA barcodes
 ### Rupert A. Collins :: December 2020
 
-This protocol is for generating DNA barcodes for the standard COI DNA barcode marker and the 12S MiFish barcode. 
+This protocol is for generating DNA barcodes for the standard COI DNA barcode marker and the 12S MiFish barcode, by Sanger sequencing. Choice of polymerase mastermix depends on if you want to sequence purified or unpurified products (use green mix for former, and colourless mix for latter). With Eurofins, unpurified products can only be sequenced in 96-well plates (PlateSeq Kit PCR) but purified products can be sequenced in 96-well plates (PlateSeq Kit Mix) or ad-hoc in individual tubes (Mix2Seq Kit). Sequencing unpurified products is the cheapest option and the least work, but requires very consistent PCR products.
 
 ### Before you start
 
 #### Kit required (manufacturers and part numbers are presented in Table 1 at the bottom): 
 
-* GoTaq Green Master Mix
+* GoTaq green mastermix (for sequencing purified products)
+* GoTaq colorless mastermix (for sequencing unpurified products)
+* Molecular grade water (DNase/RNase free)
+* A pre-paid sequencing kit (e.g. Mix2Seq)
 * 1.5 mL microcentrifuge tubes
+* 8-strip PCR tubes, or 96-well plate with 8-strip caps
 * 10/20 &micro;L XL filter tips
 * 200 &micro;L filter tips
+* Gel electrophoresis tank and DNA ladder
 * Bleach
 * 70% ethanol
 * Paper towels
@@ -21,26 +26,49 @@ This protocol is for generating DNA barcodes for the standard COI DNA barcode ma
 * Work in the main lab, not the eDNA lab.
 * Wipe down the bench with 70% ethanol followed by 10% bleach, followed by 70% ethanol (the "EBE" ethanol-bleach-ethanol clean).
 * Ensure you have sufficient gloves, towels, tips, sweetie jars, tubes etc.
+* Defrost reagents to room temperature.
+* Make aliquots (subsamples) of the GoTaq PCR mastermix, e.g. 250 &micro;L, and return all but one to freezer. This helps prevent contaminating the mastermix stock and will reduce freeze-thaw damage to the polymerase.
+* Make ~1 mL aliquots of molecular grade water. Pour the water into the tube from the bottle; never put pipette into the bottle. 
+* Prepare stocks of primers at 10 &micro;M and 2 &micro;M. Prepare these in the eDNA lab using filter tips. To make 200 &micro;L of 10 &micro;M primer, add 20 &micro;L of 100 &micro;M stock to 180 &micro;L of water. To make 200 &micro;L of 2 &micro;M primer, add 40 &micro;L of 10 &micro;M stock to 160 &micro;L of water
 
-### Extraction steps:
+### Preparing the PCR supermix:
 
-1. Turn on the oven and preheat the AL and AE buffers at 56&#176;C.
-2. Label the Sterivex by putting on masking tape, writing on the number, then another layer of tape. This means that the labels will not be lost should one of the Sterivex leak in the shaker. See:
+1. In a 1.5 mL microcentrifuge tube, mix reagents sufficient for all of your samples, plus a negative control (water), a positive control (a sample that has worked previously in the lab), and roughly 10% extra to account for pipetting error (see Table 1). Total PCR reaction volume is 20 &micro;L.
 
-<img src="assets/label.jpg" width="300">
+### Table 1. A PCR supermix for 6 samples (total n=9 including negative control, positive control and ~10% extra) at 20 &micro;L total reaction volume.
+Reagent | Volume n=1 | Volume n=9
+--- | --- | ---
+GoTaq mastermix | 10 &micro;L  | 90 &micro;L 
+Primer Forward (2 &micro;M) | 2 &micro;L  | 18 &micro;L 
+Primer Reverse (2 &micro;M) | 2 &micro;L  | 18 &micro;L 
+Molecular grade water  | 5 &micro;L  | 45 &micro;L 
 
-3. Open the Sterivex, add 5 &micro;L of proteinase K and 2 &micro;L of RNase A. Close with the same combistopper and shake to mix.
-4. Put in the oven shaker to incubate for 2 h. Return after 1 h to rearrange and check; this makes sure some samples don't get stuck and stop moving.
-5. Remove combistopper and place an inverted 1.5 mL microcentrifuge tube over the Sterivex inlet. Place an inverted 50 mL centrifuge tube over the top of both. Quickly flip so tubes are back the right way up and the Sterivex contents can drain into the microcentrifuge tube. See:
+2. Vortex the supermix thoroughly. It does not need to be kept on ice, but do not leave it lying around at room temp for hours.
+3. Normalise your DNA extracts (template) to 50 ng/&micro;L in a new 1.5 mL microcentrifuge tube (~10 &micro;L total). A handy resource for calculating DNA concentrations is [http://www.desiquintans.com/dilutioncalc](http://www.desiquintans.com/dilutioncalc). If your DNA extracts are less than 50 ng/&micro;L, then use them straight. Remember to vortex.
+4. Using the same pipette tip, add 19 &micro;L of the supermix into the PCR strip tubes or plate wells. The strip tubes can be broken apart into smaller strips if needed.
+5. Using a new tip each time, add 1 &micro;L of the normalised DNA template to the top of each well so the droplet remains visible on the side (so you can see that you've done it, in case you get distracted), and close the cap. Use 1 &micro;L of water for the negative control.
+6. Once all have been added, number and write on the caps corresponding to your lab notes.
+7. Spin down tubes in the salad spinner or the mini-centrifuge.
+8. Take tube to the PCR machines (thermocyclers).
+9. If using the Eppendorf machines, make sure when you add your tubes to the block, that they fit snugly in the *small* holes, not the big holes.
+10. If using only a few tubes, it's a good idea to put one empty tube in each corner of the block to ensure that the lid does not damage the tube caps.
+11. Program the machine as follows according to your gene target:
 
-<img src="assets/falcon.jpg" width="300">
+### Table 2. Thermocycling parameters.
+Step | Cycles | Temperature | Time
+--- | --- | --- | ---
+Initial denaturation | 1 | 95&#176;C | 2 min
+Denaturation | 40 | 95&#176;C | 30 sec
+Annealing | 40 | see Table 3. | 30 sec
+Extension | 40 | 72&#176;C | 45 sec
+Final extension | 1 | 72&#176;C | 5 min
 
-6. Centrifuge for 1 min at 4,000 g.
-7. With sterilised tweezers remove the Sterivex and discard. Then remove the 1.5 mL microcentrifuge tube carefully.
-8. Centrifuge the sample for 1.5 min at 13,000 g to collect debris.
-9. Transfer supernatant to a new 1.5 mL microcentrifuge tube. Take care to not disturb the pellet. Discard tube with debris.
-10. Centrifuge again, but for 3 min at 20,000 g.
-11. Transfer 350 &micro;L of supernatant to a new 1.5 mL microcentrifuge tube. Take care to not disturb any pellet. Discard tube with debris.
+### Table 3. Primer sequences and annealing temperatures.
+Primer | Gene | Direction | Sequence (5-3 prime) | Annealing temp
+--- | --- | --- | --- | ---
+Aa22-12SF | 12S | Forward | AGCATAACACTGAAGATRYTARGA | 53&#176;C
+Aa633-12SR | 12S | Reverse | TTCTAGAACAGGCTCCTCTAG | 53&#176;C
+
 12. In a new 50 mL centrifuge tube prepare a mastermix of buffer AL (pre-warmed) and ethanol. You will need 350 &micro;L of each for every sample, plus 10% extra. So, for 5 samples, add 1,925 &micro;L of buffer AL and 1,925 &micro;L of ethanol. Vortex to mix.
 13. Add 700 &micro;L of this mastermix to your supernatant, and vortex each samples IMMEDIATELY (important).
 14. Add 525 &micro;L of this mixture from step 13 to the DNeasy spin column. take care to pipette the contents gently and from the bottom of the column to prevent salt contamination around the rim. 
@@ -71,10 +99,17 @@ This protocol is for generating DNA barcodes for the standard COI DNA barcode ma
 
 ### Table 1. Parts and prices
 Item | Type | Quantity | Cost (excl. VAT)| Company | Part no.
---- | --- | --- |--- |--- |---
-DNeasy Blood & Tissue kit | consumable | 250 | £489.77 | Qiagen | 69506
-RNase A | consumable | 2 x 0.5 mL | £47.60 | New England Biolabs | T3018L
-50 mL Centrifuge Tube | consumable | 500 | £48.48 | Starlab UK | E1450-0200
+--- | --- | --- | --- | --- | ---
+GoTaq G2 master mix (green) | consumable | 2 x 1,250 &micro;L | £56.25 | Promega UK | M7822
+GoTaq G2 master mix (colorless) | consumable |2 x 1,250 &micro;L | £56.25 | Promega UK | M7832
+UltraPure DNase/RNase free water | consumable | 500 mL | £10.96 | Thermo Fisher Scientific | 10977035
+10/20 &micro;L XL filter tip | consumable | 10 boxes | £36.98 | Starlab UK | S1120-3710
+200 &micro;L filter tip | consumable | 10 boxes | £36.98 | Starlab UK | S1120-8710
 1.5 mL microcentrifuge tube | consumable | 500 | £14.28 | Starlab UK | S1615-5510
-1.5 mL microcentrifuge tube (LoBind) | consumable | 250 | £6.14 | Starlab UK| E1415-2600
-OneStep PCR Inhibitor Removal kit | consumable | 50 | £116 | Zymo | D6030
+96-well PCR plate | consumable | 20 | £34.68 | Starlab UK | E1403-0200
+8-strip PCR caps | consumable | 125 | £10.11 | Starlab UK | I1400-0800
+8-Strip PCR tubes | consumable | 120 | £51.70 | Starlab UK | I1402-2900
+Ladder III | consumable | 5 x 500 &micro;L | £149.6 | PCR Biosystems | PB40.13-05
+PlateSeq Kit PCR | consumable | 96 reactions | £270.00 | Eurofins Genomics | NA
+PlateSeq Kit Mix | consumable | 96 reactions | £250.75 | Eurofins Genomics | NA
+Mix2Seq Kit | consumable | 96 reactions | £290.00 | Eurofins Genomics | NA
