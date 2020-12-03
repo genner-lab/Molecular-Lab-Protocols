@@ -35,7 +35,7 @@ This protocol is for generating DNA barcodes for the standard COI DNA barcode ma
 
 1. In a 1.5 mL microcentrifuge tube, mix reagents sufficient for all of your samples, plus a negative control (water), a positive control (a sample that has worked previously in the lab), and roughly 10% extra to account for pipetting error (see Table 1). Total PCR reaction volume is 20 &micro;L.
 
-### Table 1. A PCR supermix for 6 samples (total n=9 including negative control, positive control and ~10% extra) at 20 &micro;L total reaction volume.
+#### Table 1. A PCR supermix for 6 samples (total n=9 including negative control, positive control and ~10% extra) at 20 &micro;L total reaction volume.
 Reagent | Volume n=1 | Volume n=9
 --- | --- | ---
 GoTaq mastermix | 10 &micro;L  | 90 &micro;L 
@@ -54,7 +54,7 @@ Molecular grade water  | 5 &micro;L  | 45 &micro;L
 10. If using only a few tubes, it's a good idea to put one empty tube in each corner of the block to ensure that the lid does not damage the tube caps.
 11. Program the machine as follows according to your gene target:
 
-### Table 2. Thermocycling parameters.
+#### Table 2. Thermocycling parameters.
 Step | Cycles | Temperature | Time
 --- | --- | --- | ---
 Initial denaturation | 1 | 95&#176;C | 2 min
@@ -63,38 +63,40 @@ Annealing | 40 | see Table 3. | 30 sec
 Extension | 40 | 72&#176;C | 45 sec
 Final extension | 1 | 72&#176;C | 5 min
 
-### Table 3. Primer sequences and annealing temperatures.
-Primer | Gene | Direction | Sequence (5-3 prime) | Annealing temp
---- | --- | --- | --- | ---
-Aa22-12SF | 12S | Forward | AGCATAACACTGAAGATRYTARGA | 53&#176;C
-Aa633-12SR | 12S | Reverse | TTCTAGAACAGGCTCCTCTAG | 53&#176;C
+#### Table 3. Primer sequences and annealing temperatures for common 12S and COI primers. Amplicon length includes primers.
+Primer | Reference | Gene | Direction | Amplicon length | Sequence (5\`-3\`) | Annealing temp.
+--- | --- | --- | --- | --- | --- | ---
+Aa22-12SF | Collins (unpublished) | 12S | Forward | 612 bp | AGCATAACACTGAAGATRYTARGA | 53&#176;C
+Aa633-12SR | Collins (unpublished) | 12S | Reverse | 612 bp | TTCTAGAACAGGCTCCTCTAG | 53&#176;C
+MiFish-U-F | Miya et al. (2015) | 12S | Forward | 219 bp | GTCGGTAAAACTCGTGCCAGC | 60&#176;C
+MiFish-U-R | Miya et al. (2015) | 12S | Reverse | 219 bp | CATAGTGGGGTATCTAATCCCAGTTTG | 60&#176;C
+FishF1 | Ward et al. (2005) | COI | Forward | 707 bp | TCAACCAACCACAAAGACATTGGCAC | 52&#176;C
+FishR1 | Ward et al. (2005) | COI | Reverse | 707 bp | TAGACTTCTGGGTGGCCAAAGAATCA | 52&#176;C
+LCO1490 | Folmer et al. (1994) | COI | Forward | 709 bp | GGTCAACAAATCATAAAGATATTGG | 48&#176;C
+HCO2198 | Folmer et al. (1994) | COI | Reverse | 709 bp | TAAACTTCAGGGTGACCAAAAAATCA | 48&#176;C
 
-12. In a new 50 mL centrifuge tube prepare a mastermix of buffer AL (pre-warmed) and ethanol. You will need 350 &micro;L of each for every sample, plus 10% extra. So, for 5 samples, add 1,925 &micro;L of buffer AL and 1,925 &micro;L of ethanol. Vortex to mix.
-13. Add 700 &micro;L of this mastermix to your supernatant, and vortex each samples IMMEDIATELY (important).
-14. Add 525 &micro;L of this mixture from step 13 to the DNeasy spin column. take care to pipette the contents gently and from the bottom of the column to prevent salt contamination around the rim. 
-15. Centrifuge for 1.5 min at 13,000 g.
-16. Remove the column from the collection tube and carefully pipette out the liquid from the collection tube and discard this liquid by ejecting the full pipette tip.
-17. Repeat steps 12/13 to pass another 525 &micro;L through the column.
-18. Discard collection tube and contents, and place column in new collection tube.
-19. Add 600 &micro;L buffer AW1 to the spin column and centrifuge for 1.5 min at 13,000 g. Be sure to add the buffer gently from the bottom as before.
-20. Discard collection tube and contents, and place column in new collection tube. Be careful to not let the liquid touch the bottom of the spin column.
-21. Add 600 &micro;L buffer AW2 to the spin column and centrifuge for 1.5 min at 13,000 g. Be sure to add the buffer gently from the bottom as before.
-22. Use a pipette to remove the liquid from the collection tube as before. Be careful to not let the liquid touch the bottom of the spin column.
-23. Centrifuge the spin column and empty collection tube again, this time for 3 min at 20,000 g.
-24. Transfer the column to a new 1.5 mL microcentrifuge tube with the cap cut off.
-25. Open the spin column cap for 2 min to allow ethanol to evaporate.
-26. Add 105 &micro;L of the pre-warmed AE elution buffer. 
-27. Close caps and incubate in the oven at 56&#176;C for 5 mins. 
-28. Centrifuge the spin column at 13,000 g for 1.5 mins to release the DNA.
-29. If required for low yield samples, pipette the eluate back into the spin column and repeat step 28.
+### Gel electrophoresis
 
-### Inhibitor removal, quantification, and storage
+12. Prepare a 1% agarose gel to visualise the PCR amplicons: 1 g agarose powder, 100 mL 0.5x TBE buffer, 3 &micro;L GelRed. Make the gel no thicker than 5 mm.
+13. Directly load 2-3 &micro;L of DNA Ladder III into the last or first well in the TBE gel tank. Use 10 &micro;L loose tips from the gel bench. Never use boxed filter tips, and never use pipettes that are not from the gel bench.  
+14. Directly load 2-3 &micro;L (more for the wider combs) of each PCR product into remaining wells. The PCR products already contain loading dye.
+15. Run the gel at 100v (5v/cm) for 30-45 mins. The yellow part of the GoTaq loading dye migrates about as fast as primer dimer, so stop the gel before the yellow band leaves the gel.
+16. Visualise in the UV hood. Products should be bright and clean, a single band, and of the expected length. Primer dimers or free primers will be a faint smudge or band near the bottom ladder. In the gel below some non-specific amplification is apparent (faint bands above and below the main products) and the products are somewhat too strong (reducing number of cycles to 35 and increasing the annealing temp by 1-2&#176;C will improve these. Primer dimer is apparent as the bottom band. Because they are so strong, these products can be taken forward to sequence, but further optimisation of the PCR will produce more reliable results. The better the gel looks, the better the sequence data!
 
-1. Pass the eluted DNA through a Zymo OneStep PCR Inhibitor removal column (following manufacturer's instrunctions), and into a 1.5 mL microcentrifuge tube with cap removed.
-2. Transfer the eluate into a labelled 1.5 mL LoBind microcentrifuge tube for long term storage. For a tube labelling system, I write the date, and the extraction number from that day, e.g. 08.08.19/4 which would be the fourth sample done on the 8th of August 2019. Refer to the lab book to know which field event this corresponds to
-3. Nanodrop 1 &micro;L and record DNA concentration (ng/&micro;L) as well as the 260/280 and 260/230 ratios.
-4. Freeze in the eDNA freezer, in a well labelled box (name, date, project etc). Use tape or a piece of card for the labels instead of writing on the box directly with a marker pen.
-5. Clean the lab again following steps at the beginning.
+#### Figure 1. Gel of varying length amplicons.  
+<img src="assets/gel.jpg" width="500">
+
+18. Re-cap the PCR tubes and store in the fridge. For storage longer than 1 week, place in a labelled plastic bag and store in the chest freezer. 
+
+### Purification and sequencing
+
+20. Purification removes leftover DNTPs, primers, primer dimers, and polymerase etc. Allows for accurate quantification of concentration.
+21. If unpurified products are to be sequenced (PlateSeq Kit PCR), the concentration still needs to be estimated. Purify (as follows) a minimum of three representative products and take an average. Assume all others are the similar enough to these.
+22. If purified products are to be sequenced (PlateSeq Kit Mix, Mix2Seq Kit), all products need to purified as follows.
+23. Take 15 &micro;L of PCR product and pipette into a new 1.5 mL microcentrifuge tube, and add 75 &micro;L of DNA binding buffer. Vortex.
+24. For each sample, remove cap from 1.5 mL microcentrifuge tube and insert a Zymo spin column.
+24. Pipette the 90 &micro;L of mix into the spin column carefully from the bottom up.
+25. Centrifuge at top speed (14,000 g) for 
 
 
 ### Table 1. Parts and prices
@@ -110,6 +112,10 @@ UltraPure DNase/RNase free water | consumable | 500 mL | £10.96 | Thermo Fisher
 8-strip PCR caps | consumable | 125 | £10.11 | Starlab UK | I1400-0800
 8-Strip PCR tubes | consumable | 120 | £51.70 | Starlab UK | I1402-2900
 Ladder III | consumable | 5 x 500 &micro;L | £149.6 | PCR Biosystems | PB40.13-05
+GelRed nucleic acid stain | consumable | 5 x 0.5 mL | Cambridge Bioscience | £432.25 | 41003-5-BT
 PlateSeq Kit PCR | consumable | 96 reactions | £270.00 | Eurofins Genomics | NA
 PlateSeq Kit Mix | consumable | 96 reactions | £250.75 | Eurofins Genomics | NA
 Mix2Seq Kit | consumable | 96 reactions | £290.00 | Eurofins Genomics | NA
+Zymo DNA binding buffer | consumable | 100 mL | £49.28 | Cambridge Bioscience | D4004-1-L
+Zymo DNA Wash Buffer | consumable | 24 mL | £29.26 | Cambridge Bioscience | D4003-2-24
+Zymo spin IC columns | consumable | 250 | £180.18 | Cambridge Bioscience | C1004-250
