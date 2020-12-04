@@ -1,4 +1,4 @@
-# Protocol for PCR amplifying COI and 12S DNA barcodes
+# Protocol for PCR amplifying and sequencing COI and 12S DNA barcodes
 ### Rupert A. Collins :: December 2020
 
 This protocol is for generating DNA barcodes for the standard COI DNA barcode marker and the 12S MiFish barcode, by Sanger sequencing. Choice of polymerase mastermix depends on if you want to sequence purified or unpurified products (use green mix for former, and colourless mix for latter). With Eurofins, unpurified products can only be sequenced in 96-well plates (PlateSeq Kit PCR) but purified products can be sequenced in 96-well plates (PlateSeq Kit Mix) or ad-hoc in individual tubes (Mix2Seq Kit). Sequencing unpurified products is the cheapest option and the least work, but requires very consistent PCR products.
@@ -44,7 +44,7 @@ Primer Reverse (2 &micro;M) | 2 &micro;L  | 18 &micro;L
 Molecular grade water  | 5 &micro;L  | 45 &micro;L 
 
 2. Vortex the supermix thoroughly. It does not need to be kept on ice, but do not leave it lying around at room temp for hours.
-3. Normalise your DNA extracts (template) to 50 ng/&micro;L in a new 1.5 mL microcentrifuge tube (~10 &micro;L total). A handy resource for calculating DNA concentrations is [http://www.desiquintans.com/dilutioncalc](http://www.desiquintans.com/dilutioncalc). If your DNA extracts are less than 50 ng/&micro;L, then use them straight. Remember to vortex.
+3. Normalise your DNA extracts (template) to 50 ng/&micro;L in a new 1.5 mL microcentrifuge tube (~10 &micro;L total). Remember to vortex. A handy resource for calculating DNA concentrations is [http://www.desiquintans.com/dilutioncalc](http://www.desiquintans.com/dilutioncalc). If your DNA extracts are less than 50 ng/&micro;L, then use them straight. If the PCR products are messy and genomic DNA is present on the gel, normalise to a lower concentration than 50 ng/&micro;L. 
 4. Using the same pipette tip, add 19 &micro;L of the supermix into the PCR strip tubes or plate wells. The strip tubes can be broken apart into smaller strips if needed.
 5. Using a new tip each time, add 1 &micro;L of the normalised DNA template to the top of each well so the droplet remains visible on the side (so you can see that you've done it, in case you get distracted), and close the cap. Use 1 &micro;L of water for the negative control.
 6. Once all have been added, number and write on the caps corresponding to your lab notes.
@@ -81,23 +81,54 @@ HCO2198 | Folmer et al. (1994) | COI | Reverse | 709 bp | TAAACTTCAGGGTGACCAAAAA
 13. Directly load 2-3 &micro;L of DNA Ladder III into the last or first well in the TBE gel tank. Use 10 &micro;L loose tips from the gel bench. Never use boxed filter tips, and never use pipettes that are not from the gel bench.  
 14. Directly load 2-3 &micro;L (more for the wider combs) of each PCR product into remaining wells. The PCR products already contain loading dye.
 15. Run the gel at 100v (5v/cm) for 30-45 mins. The yellow part of the GoTaq loading dye migrates about as fast as primer dimer, so stop the gel before the yellow band leaves the gel.
-16. Visualise in the UV hood. Products should be bright and clean, a single band, and of the expected length. Primer dimers or free primers will be a faint smudge or band near the bottom ladder. In the gel below some non-specific amplification is apparent (faint bands above and below the main products) and the products are somewhat too strong (reducing number of cycles to 35 and increasing the annealing temp by 1-2&#176;C will improve these. Primer dimer is apparent as the bottom band. Because they are so strong, these products can be taken forward to sequence, but further optimisation of the PCR will produce more reliable results. The better the gel looks, the better the sequence data!
+16. Visualise in the UV hood. Products should be bright and clean, a single band, and of the expected length. Primer dimers or free primers will be a faint smudge or band near the bottom ladder. 
+17. In the gel below some non-specific amplification is apparent (faint bands above and below the main products) and the products are somewhat too strong (reducing number of cycles to 35, using lower concentration template, or increasing the annealing temp by 1-2&#176;C will improve these. Primer dimer is apparent as the bottom band. Because they are so strong, these products can be taken forward to sequence, but further optimisation of the PCR will produce more reliable results. The better the gel looks, the better the sequence data!
 
 #### Figure 1. Gel of varying length amplicons.  
 <img src="assets/gel.jpg" width="500">
 
 18. Re-cap the PCR tubes and store in the fridge. For storage longer than 1 week, place in a labelled plastic bag and store in the chest freezer. 
 
-### Purification and sequencing
+### Purification
 
-20. Purification removes leftover DNTPs, primers, primer dimers, and polymerase etc. Allows for accurate quantification of concentration.
-21. If unpurified products are to be sequenced (PlateSeq Kit PCR), the concentration still needs to be estimated. Purify (as follows) a minimum of three representative products and take an average. Assume all others are the similar enough to these.
-22. If purified products are to be sequenced (PlateSeq Kit Mix, Mix2Seq Kit), all products need to purified as follows.
-23. Take 15 &micro;L of PCR product and pipette into a new 1.5 mL microcentrifuge tube, and add 75 &micro;L of DNA binding buffer. Vortex.
-24. For each sample, remove cap from 1.5 mL microcentrifuge tube and insert a Zymo spin column.
-24. Pipette the 90 &micro;L of mix into the spin column carefully from the bottom up.
-25. Centrifuge at top speed (14,000 g) for 
+Purification removes leftover DNTPs, primers, primer dimers, and polymerase etc. Allows for accurate quantification of concentration. If unpurified products are to be sequenced (PlateSeq Kit PCR), the concentration still needs to be estimated. Purify (as below) a minimum of three representative products and take an average. Assume all others are the similar enough to these. If purified products are to be sequenced (PlateSeq Kit Mix, Mix2Seq Kit), all products need to purified as follows:
 
+1. For each PCR take 15 &micro;L of product and pipette into a new 1.5 mL microcentrifuge tube, and add 75 &micro;L of DNA binding buffer. Vortex.
+2. Insert a Zymo spin column into a new 1.5 mL microcentrifuge tube (cap removed). 
+3. Pipette the 90 &micro;L of mixture into the spin column, carefully from the bottom filling up.
+4. Centrifuge at top speed (14.1 rcf) for 1 min, and transfer the column into a new 1.5 mL microcentrifuge tube (cap removed). Discard the flow-through and tube.
+5. Add 200 &micro;L of DNA wash buffer, carefully from the bottom filling up.
+6. Centrifuge at top speed for 1 min, and remove column and pipette out the 200 &micro;L from the bottom of the 1.5 mL tube and dicard tip.
+7. Place column back into the same 1.5 mL tube and repeat with 200 &micro;L of DNA wash buffer and centifuge, pipette and discard buffer as before. 
+8. Centrifuge again "dry" for 2 min.
+9. Transfer column to a new 1.5 mL microcentrifuge tube (cap removed) and leave wit the column cap open for 2 min to evaporate final ethanol traces.
+10. Add 15 &micro;L EB buffer (10 mM Tris) carefully and directly onto the column matrix. Do not use buffers that contain EDTA (TE buffer, Qiagen AE buffer). Zymo Elution Buffer contain low concentrations of EDTA (0.1 mM), so probably okay. Molecular grade water can work, but can also be problematic if the products are weak and water pH < 6.
+11. Incubate at room temp for 1 min.
+12. Centrifuge for 1 min. 
+13. Transfer to a new 1.5 mL microcentrifuge tube (labelled).
+14. Quantify 1 &micro;L on the nanodrop. 
+
+### Sequencing with Mix2Seq
+
+Sanger sequencing requires a reaction including the addition of a single primer, unlike PCR which requires two primers. The DNA sequence returned can be up to ~900 bp, but the sequencing primer sites and at least 
+~30 bp downstream will not be usable. Bear this in mind when choosing which PCR primer to use as sequencing primer, as if you want the entire sequence, you will need to sequence in both directions, which requires two different sequencing reactions.
+
+For 12S fish metabarcoding reference libraries, first try to PCR the Aa primer set because this generates a ~567 bp fragment that includes the MiFish fragment and its priming sites in one sequencing reaction (I sequence with Aa633-12SR). If Aa fails to amplify for some samples, then use the MiFish primers, but remember that it will require two sequencing reactions (forward and reverse) to get the whole MiFish fragment (necessary for taxonomic assignment).
+
+For COI, sequencing just the forward primer (FishF1) will give you ~630 bp usable sequence, which is good for most applications. If the full 655 bp barcode is required (e.g. type material or species description), then it should be sequenced in both directions. 
+
+1. Follow the enclosed instructions for submitting samples for sequencing with Eurofins kits. Adjust according to fragment length.
+2. For 300-1000 bp amplicons with Mix2Seq, the required DNA concentration is 5 ng/&micro;L in 15 &micro;L, (total required = 75 ng).
+3. Add 75 ng to the sequencing tube, and dilute your sample accordingly at [http://www.desiquintans.com/dilutioncalc](http://www.desiquintans.com/dilutioncalc) by topping up to 15 &micro;L with molecular grade water.
+4. Add 2 &micro;L of the sequencing primer at 10 &micro;M.
+5. Write the Mix2Seq barcode ID codes in your lab book corresponding to each sample.
+6. Seal and put the Mix2Seq tubes in a small plastic baggy and write the number of tubes on the bag.
+7. Place in a small padded envelope and write the Eurofins address (provided with the kit) on the envelope, or use their provided stickers.
+8. Take the envelope to Biomedical Sciences stores (see Figure 2) and ask the stores manager to put in the Eurofins dropbox for you. Say thank you.
+9. Sequencing results will be emailed to the Eurofins account holder within 48 hours usually.
+
+#### Figure 2. Location of Eurofins dropbox at Biomedical Sciences stores.  
+<img src="assets/biomed.png" width="500">
 
 ### Table 1. Parts and prices
 Item | Type | Quantity | Cost (excl. VAT)| Company | Part no.
