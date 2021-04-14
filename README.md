@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/317309701.svg)](https://zenodo.org/badge/latestdoi/317309701)
+
 # Molecular-Lab-Protocols
 Protocols for molecular lab work (click on blue links to open).
 
