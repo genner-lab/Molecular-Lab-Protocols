@@ -276,7 +276,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 6. Recalculate the DNA copy number of this 10 ng/&micro;L stock = 2.824e+11 copy/&micro;L (282.4 billion copies).
 7. Dilute again down to a 1 billion copy/&micro;L stock by adding 3.5 &micro;L of 10 ng/&micro;L stock to 996.5 &micro;L TE buffer.
 
-| <img src="assets/billion-copies.png" width="500"> |
+| <img src="assets/billion-copies.png" width="1000"> |
 | ------ |
 
 | ![billion-copies.png](assets/billion-copies.png) |
