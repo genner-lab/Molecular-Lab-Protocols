@@ -279,7 +279,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 | <img src="assets/billion-copies.png" width="500"> |
 | ------ |
 
-| ![billion-copies.png](assets/billion-copies.png | width=100)
-| ------ |
+| ![billion-copies.png](assets/billion-copies.png) |
+| :---: |
 
 8. These stocks should be frozen and kept in different boxes to the PCR reagents.
