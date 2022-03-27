@@ -111,7 +111,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 ### Setting the thermocycling conditions
 
 1. On the Welcome page, select "Create a new experiment" and name it with the date and any additional details
-2. On the Edit Protocol page, now set up cycling conditions as follows for the Chai Bio Sahara Master Mix (these conditions may not apply to other master mixes or assays).
+2. On the Edit Protocol tab, now set up cycling conditions as follows for the Chai Bio Sahara Master Mix (these conditions may not apply to other master mixes or assays).
 
 | PCR Step | Time | Temperature | Number cycles |
 | :--- | :--- | :--- | :--- |
@@ -123,11 +123,10 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 
 ### Setting the samples and targets
 
-1. On the Samples + Targets page (see Figure 2), add names of the samples and amplification standards used in the experiment.
+1. On the Samples + Targets tab, add names of the samples and amplification standards used in the experiment.
 2. Here, the standards are named with the number of copies, in thousands, from 100,000 (100k) to 100 copies (0.1k).
 3. Our unknown field sample is simply called "Sample" in this example.
 
-#### Figure 2. Samples
 <img src="assets/samples.png" width="700">
 
 4. Next add the target. This is the name of the species detection assay that we are using.
@@ -138,7 +137,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 ### Setting the well layout
 
 1. Each standard or field sample should be performed in triplicate to reduce variation common among individual replicates.
-2. Highlight all wells and set the target to "leuco" from the Target drop-down menu.
+2. On the Well Layout tab highlight all wells and set the target to "leuco" from the Target drop-down menu.
 3. Now highlight three wells (A1, A2, A3) and choose a "100k" standard from the Sample drop-down menu.
 4. Choose "S" (standard) from the Type menu, and manually enter "100000" into the set quantification to 100,000 copies.
 
@@ -146,52 +145,68 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 
 5. Repeat for all quantification standards down to 100 copies. Be sure to check they match with the names given and have the correct number of zeros.
 6. For our field samples, assign these to wells A7, A8, B7, choose "Sample" and Type "U" (unknown).
-7. Add an additional well (B8) as a negative control (Type "-").
+7. Add an additional well (B8) as a negative PCR control (Type "-").
 
 <img src="assets/well-layout-full.png" width="700">
 
 ### Preparing the PCR reaction mix
 
-1. In a clean 1.5 mL microcentrifuge tube prepare a PCR reaction mix sufficient for x16 10 &micro;L PCR reactions.
-2. We prepare enough reagents for 17, to account for loss from pipetting error or evaporation.
-3. Add the volume with the appropriate pipette for maximum accuracy.
-4. The 
+1. In a clean 1.5 mL microcentrifuge tube prepare a mix sufficient for 16 PCR reactions of 10 &micro;L.
+2. We prepare enough reagents for 17 reactions here, to account for any loss from pipetting error and evaporation.
+3. The combined reagents are premixed and added to every tube, but the eDNA field samples, quantification standards and negative PCR controls are each added individually.
 
-### Table XXX. A 10 &micro;L PCR reaction mix for x16 wells
-| Addition | Reagent | Volume x 1 (&micro;L) | Volume x17 (&micro;L) |
+| Added | Reagent | Volume x 1 (&micro;L) | Volume x17 (&micro;L) |
 | :--- | :--- | ---: | ---: |
 | combined | Sahara Hot Start PCR Master Mix | 5 | 85 |
 | combined | primer+probe mix | 0.5 | 8.5 |
 | combined | ultrapure water | 3.5 | 59.5 |
-| individual | sample/standard/control | 1 | NA |
+| individually | sample/standard/control | 1 | NA |
 
-5. Vortex to mix the reagents well
-6. Add 9 &micro;L of this mixture to each 0.1 mL PCR tube well.
-7. Put away all reagents stocks back in the freezer.
+4. Vortex to mix the reagents well
+5. Add 9 &micro;L of this mixture to each 0.1 mL PCR tube well.
+6. Put away all reagents stocks back in the freezer.
 
-### Adding the standards and eDNA field samples
+### Adding the controls, quantification standards and eDNA field samples
+
+* [IMPORTANT NOTE] To minimise risk of cross contamination, it is important to add the negative control water first, followed by eDNA field sample, followed by quantification standards.
 
 1. To the Negative Control "-" well B8, add 1 &micro;L of ultrapure water. 
-2. To the Unknown field sample "U" wells A7, A8, B7, add 1 &micro;L of the eDNA field sample.
-3. To the Standards "S" wells, add 1 &micro;L of DNA quantification standard at the appropriate concentration, i.e. matching up with the prepared concentrations and the well layout described above.
+2. To the Unknown field sample "U" wells A7, A8, B7, add 1 &micro;L of the eDNA field sample (see information about [preparing samples](#preparing-the-eDNA-field-samples)).
+3. To the Standards "S" wells, add 1 &micro;L of DNA quantification standard at the appropriate concentration, i.e. matching up with the prepared concentrations and the well layout described above (also see information about [preparing quantification standards](#preparing-the-quantification-standards)).
 4. Close the caps firmly, and spin down the tubes to collect liquid at the bottom of the tubes.
 5. These are now ready for loading onto the machine.
 
 ### Running the qPCR
 
-1. 
+1. Open the Open qPCR machine lid with the handle. DO NOT turn the dial to open.
+2. Place the strips in the block, ensuring the well layout remains the same.
+3. Firmly press down on the tube lids to ensure they are closed.
+4. On the left-hand menu, press the red "Run Experiment" button to start the run.
+ 
+| <img src="assets/run.png" width="350"> |
+| :---: |
 
-3. Dilute field sample!
-3. To minimise risk of cross contamination, it is important to add the negative control water first, followed by eDNA field sample, followed by quantification standards.
-4. Prepare the quantification standards on a seperate bench area and put away the 
-4. Further, ensure that pipettes that are used for handling quantification standards are never used for preparing the PCR reactions or eDNA field samples.
-5. ff
+5. On the Amplification Curve tab, you can watch the amplification in real time. Don't worry if it looks bad at first, as it will settle over the course of the cycles. 
+
+| <img src="assets/amp-curve.png" width="700"> |
+| :---: |
+
+### Interpretation and quantification
+
+1. When the run has finished you can check that amplifications have occurred with a strong linear "lift off" phase followed by a plateau.
+2. The cycle quantification (Cq) value on the x-axis is the number of cycles it takes for exponential amplification to occur.
+3. The lower this value, the higher the initial concentration of DNA.
+4. On the Standard Curve tab, the estimated average quantifications for each Sample are reported on the right-hand table under "Qty M" (mean quantity).
+5. Here, we estimate the sample has 994.164 copies/&micro;L. If 500 mL of pond water was pumped through the filter, and our extraction elution volume was 105 &micro;L, then our estimate of pond eDNA concentration was 208,774 per litre (`((994.164*105)/500)*1000`).
+
+| <img src="assets/standard-curve.png" width="900"> |
+| :---: |
 
 ### Considerations
 
-1. Run all without standards, and then repeat with standards for those positive.
-2. This is to verify that the reagents are not contaminated with target DNA.
-
+1. Because only one sample can be run together with the quantification standards, sample throughput is very low. This can be increased by two ways.
+2. Firstly, up to four samples (in triplicate) can be run initially without standards, and then those that show a positive amplification can be repeated together with quantification standards. This will save time if not all the samples are positive. Ensure that at least one postive control standard well is run to ensure that the assay is working effectively.
+3. Secondly, it is possible to perform one standard curve experiment, and then use this data for future samples run without the standard curve. This can be done by manually entering the copy number and Cq values for each standard and sample into the [NEBioCalculator qPCR Quantification tool](https://nebiocalculator.neb.com/#!/qPCRGen). Note that this less reliable than a standard curve experiment, but works if only rough copy number estimates are required.
 
 ### Appendix 1
 
@@ -249,7 +264,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 
 #### Diluting quantification standards
 
-* IMPORTANT: the standards are supplied dried and HIGHLY concentrated, and must be prepared in a separate area and using separate pipettes to those used for DNA extraction and PCR reaction preparation. Bleach the area thoroughly after use.
+* [IMPORTANT NOTE] the standards are supplied dried and HIGHLY concentrated, and must be prepared in a separate area and using separate pipettes to those used for DNA extraction and PCR reaction preparation. Bleach the area thoroughly after use.
 * All traces of them must be kept seperate from the other reagents because they are indistinguishable from real tilapia DNA and can lead to severe false positive contamination problems.
 * Always use TE buffer to dilute the stocks of quantification standards. Ultrapure water can be used for serial dilutions as these will be discarded after use.
 * Prepare the standards as follows (initial steps only need to be done once):
@@ -276,12 +291,7 @@ Note: Calibration of Open qPCR machine may be necessary on initial installation.
 6. Recalculate the DNA copy number of this 10 ng/&micro;L stock = 2.824e+11 copy/&micro;L (282.4 billion copies).
 7. Dilute again down to a 1 billion copy/&micro;L stock by adding 3.5 &micro;L of 10 ng/&micro;L stock to 996.5 &micro;L TE buffer.
 
-| <img src="assets/billion-copies.png" width="1000"> |
-| ------ |
-
-| ![billion-copies.png](assets/billion-copies.png) |
+| <img src="assets/billion-copies.png" width="500"> |
 | :---: |
-
-![billion-copies.png](assets/billion-copies.png =20)
 
 8. These stocks should be frozen and kept in different boxes to the PCR reagents.
