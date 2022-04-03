@@ -1,7 +1,7 @@
 # Protocols for running species-specific qPCR assays for tilapia species
 ### Rupert Collins, Andy Saxon, Martin Genner :: March 2022
 
-This protocol describes quantitative PCR (qPCR) assays to detect three species of tilapia cichlid present in Tanzanian aquaculture: _Oreochromis leucostictus_ (blue-spotted tilapia), _Oreochromis niloticus_ (Nile tilapia), and _Oreochromis urolepis_ (Wami tilapia). 
+This protocol describes quantitative PCR (qPCR) assays to detect three species of tilapia cichlid present in Tanzanian aquaculture: _Oreochromis leucostictus_ (blue-spotted tilapia), _Oreochromis niloticus_ (Nile tilapia), and _Oreochromis urolepis_ (Wami tilapia). A tutorial video accompanying this protocol can be found at [https://youtu.be/dsI-viP6Oes](https://youtu.be/dsI-viP6Oes).
 
 ### Before you start
 

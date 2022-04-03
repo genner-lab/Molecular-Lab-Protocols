@@ -1,11 +1,11 @@
 # Protocols for eDNA extraction from Sterivex filters
 ### Rupert A. Collins :: December 2020
 
-This protocol is a simple DNA extraction method for ATL-buffer-preserved eDNA from Sterivex filters, and is similar to that of [Spens et al. (2017)](https://dx.doi.org/10.1111/2041-210X.12683). The inhibitor removal step is optional but recommended. A qPCR standard curve assay will indicate if inhibitors are present. 
+This protocol is a simple DNA extraction method for ATL-buffer-preserved eDNA from Sterivex filters, and is similar to that of [Spens et al. (2017)](https://dx.doi.org/10.1111/2041-210X.12683). The inhibitor removal step is optional but recommended. A qPCR standard curve assay will indicate if inhibitors are present. A tutorial video accompanying this protocol can be found at [https://youtu.be/sLReBIjP-5k](https://youtu.be/sLReBIjP-5k).
 
 ### Before you start
 
-#### Kit required (manufacturers and part numbers are presented in Table 1 at the bottom): 
+#### Kit required (manufacturers and part numbers are presented in Table 1 at the bottom):
 
 * DNeasy Blood & Tissue Kit
 * OneStep PCR Inhibitor Removal Kit (optional)
